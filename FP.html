@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universitas AKI</title>
+    <link rel="icon" href="/Unaki_assets/logo Unaki/image_20250117_144046_0000.png">
+
+    <!-- style -->
+    <link rel="stylesheet" href="/Assets/bootstrap-4.6.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/Assets/DataTables-1.13.1/css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="/Assets/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="/Assets/DataTables-1.13.1/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Spline+Sans:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    .sejarah {
+        margin: 120px 0;
+    }
+    .container-custom {
+        background-color: #ffffff;
+        padding: 30px;
+        margin-top: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .hero-title {
+        margin-bottom: 50px;
+        color: #005aab;
+        font-weight: bold;
+    }
+    .judul8{
+        background-color:#a102a1 !important;
+        color: white !important;
+        padding: 20px 0; 
+    }
+    .text-danger {
+        color: #a102a1 !important;
+    }
+</style>
+<body class="content" id="content">
+        <!-- Navbar -->
+        <section class="site-header" >
+            <nav class="navbar navbar-expand-lg" id="navbarNav">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="/Unaki_assets/logo Unaki/unaki-logo-removebg-preview.png  " class="px-3 logo" alt="logo unaki" id="logoUnaki">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto" id="nav1" >
+                            <!-- Beranda -->
+                            <li class="nav-item">
+                                <a class="nav-link px-4" href="/File HTML/index.html"><i class="fa-solid fa-house"></i></a> 
+                            </li>
+                            <!-- Tentang -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-4 dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tentang</a>  
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item my-3" href="/File HTML/sejarah.html">Sejarah</a>
+                                    <a class="dropdown-item my-3" href="/File HTML/visiMisi.html">Visi dan Misi</a>
+                                    <a class="dropdown-item my-3" href="/File HTML/sambutanrektor.html">Sambutan Rektor</a>
+                                    <a class="dropdown-item my-3" href="/File HTML/strukturOrg.html">Struktur Organisasi</a>
+                                    <a class="dropdown-item my-3" href="https://www.youtube.com/watch?v=lQGF_0pla4o">Video Profile</a>
+                                </div>                        
+                            </li>
+                            <!-- Akademik -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-4 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Akademik</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item my-3" href="/File HTML/FTI.html">Fakultas Teknik dan Informatika</a>
+                                    <a class="dropdown-item my-3" href="/File HTML/FEB.html">Fakultas Ekonomi dan Bisnis</a>
+                                    <a class="dropdown-item my-3" href="/File HTML/FBB.html">Fakultas Bahasa dan Budaya</a>
+                                    <a class="dropdown-item my-3" href="/File HTML/FP.html">Fakultas Psikologi</a>
+                                    <a class="dropdown-item my-3" href="/File HTML/Akreditasi.html">Akreditasi</a>
+                                </div>             
+                            </li>
+                            <!--  Admisi -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-4 dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admisi</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item my-3" href="/File HTML/prosedur.html">Prosedur Pendaftaran</a>
+                                    <a class="dropdown-item my-3" href="/File HTML/jalurpendidikan.html">Jalur pendidikan</a>
+                                    <a class="dropdown-item my-3" href="/File HTML/biayapendidikan.html">Biaya pendidikan</a>
+                                    <a class="dropdown-item my-3" href="/File HTML/beasiswa.html">Beasiswa Universitas AKI</a>
+                                    <a class="dropdown-item my-3" href="https://pmbonline.unaki.ac.id/">Pendaftaran Online</a>
+                                    <a class="dropdown-item my-3" href="/File HTML/syarat.html">Syarat Registrasi</a>
+                                  </div>
+                            </li>
+                            <!-- Layanan -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-4 dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Layanan</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item my-3" href="https://student.unaki.ac.id/">SISTA Portal Student</a>
+                                    <a class="dropdown-item my-3" href="https://lecturer.unaki.ac.id/">SISTA Portal Lecturer</a>
+                                    <a class="dropdown-item my-3" href="https://perpustakaan.unaki.ac.id/">Perpustakaan</a>
+                                    <a class="dropdown-item my-3" href="https://unaki.ac.id/ejournal/">E-Journal</a>
+                                    <a class="dropdown-item my-3" href="https://www.unaki.ac.id/new-galleries/berita-kampus/">Berita Kampus</a>
+                                    <a class="dropdown-item my-3" href="https://www.unaki.ac.id/new-galleries/galeri-kampus/">Galeri</a>
+                                  </div>
+                            </li>
+                            <!-- Contact -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-4 dropdown-toggle" href="/File HTML/Contact.html" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kontak</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item my-3" href="/File HTML/Contact.html">Hubungi Kami</a>
+                                    <a class="dropdown-item my-3" href="https://www.unaki.ac.id/map-dan-lokasi/">Maps</a>
+                                </div>
+                            </li>
+                            <!-- Language -->
+                            <div class="navbar-nav lang" id="google_translate_element" >
+                                <li class="nav-item ID"  onclick="translateTo('id')">
+                                    <a  class="nav-link pl-2"  href=""><img src="https://flagcdn.com/id.svg" width="25" alt="LangID"></a>
+                                </li>
+                                <li class="nav-item EN"  onclick="translateTo('en')">
+                                    <a  class="nav-link" style="margin-left: -15px;" href=""><img src="https://flagcdn.com/gb.svg" width="30" alt="LangEN"></a>
+                                </li>
+                            </div>
+                        </ul>
+                        <!-- <div class="search-container">
+                           
+                            <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    
+                           
+                            <div class="search-box">
+                                <input type="text" placeholder="Search...">
+                            </div>
+                        </div> -->
+                        <div class="account d-flex">
+                            <a href="/File HTML/daftar.html" class="btn btn-daftar">Daftar</a>
+                            <a href="/File HTML/login.html" class="btn btn-login">Login</a>
+                        </div>
+                       
+                        <!-- <div class="profile">
+                            <div class="container profile-icon">
+                                <a class="icon" href="#"><i class="fa-solid fa-user"></i></a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+<!-- Main Page -->
+ <section class="sejarah">
+    <div class="container text-center judul8">
+        <h1><i class="fas fa-graduation-cap"></i> Fakultas Psikologi</h1>
+    </div>    
+    <main class="container mt-4">
+        <!-- Visi dan Misi -->
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="text-danger">Visi</h4>
+                    <p>"Menjadi fakultas yang unggul dan kompetitif secara nasional di bidang informatika dan bisnis berdasarkan iman dan ketakwaan kepada Tuhan Yang Maha Esa."</p>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-danger">Misi</h4>
+                    <ol>
+                        <li>Meningkatkan kualitas pendidikan untuk menghasilkan lulusan yang inovatif, dengan kemampuan pemecahan masalah yang unggul di bidang informatika dan bisnis, berdasarkan iman dan takwa kepada Tuhan Yang Maha Esa, serta bermoral Pancasila dan berkarakter mulia.</li>
+                        <li>Mengembangkan kualitas penelitian berbasis teknologi dan bisnis di bidang informatika.</li>
+                        <li>Menerapkan dan menyebarluaskan layanan masyarakat berbasis teknologi dan bisnis di bidang informatika sesuai dengan kebutuhan dan perkembangan masyarakat.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section>        
+            <h2 class="text-center mb-5">PROGRAM STUDI</h2>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title text-danger">Program Studi Psikologi</h3>
+                    <ul>
+                        <li style="font-weight: bold ;"><i class="fas fa-check-circle text-success"></i> Psikologi Bisnis</li>
+                        <p>Dalam jalur ini, mahasiswa dipersiapkan untuk menjadi ilmuwan data (data scientist).</p>
+                        <ol>
+                            <li>Ilmuwan data mampu menganalisis berbagai jenis data (terstruktur dan tidak terstruktur) serta membuat visualisasi dari data tersebut. Memiliki keahlian statistik dan mengombinasikannya dengan ilmu komputer dan pembelajaran mesin (machine learning).</li>
+                            <li>Ilmuwan data dapat melakukan pemrograman dan menggunakan alat bantu untuk menganalisis dan mengolah data sehingga lebih mudah dimanfaatkan. Mereka dapat menggunakan hasil analisis untuk memberikan solusi yang tepat bagi pengembangan perusahaan.</li>
+                        </ol>
+                        <p><strong>Profesi ini merupakan bidang yang luas dengan peluang kerja yang tersedia di hampir setiap industri.</strong></p>
+        
+                        <li style="font-weight: bold ;"><i class="fas fa-check-circle text-success"></i> Psikologi Teknologi</li>
+                        <p>Dalam jalur ini, mahasiswa dipersiapkan untuk menjadi insinyur perangkat lunak (software engineer).</p>
+                        <ol>
+                            <li>Insinyur perangkat lunak mampu menganalisis, merancang, menyusun spesifikasi, mengimplementasikan, dan memvalidasi desain sistem perangkat lunak untuk menjawab suatu permasalahan. Insinyur perangkat lunak sangat dibutuhkan di dunia kerja karena jumlahnya yang masih terbatas.</li>
+                            <li>Mereka juga dapat membuka usaha sendiri, dengan mengembangkan dan menciptakan program perangkat lunak untuk perusahaan atau individu yang membutuhkannya.</li>
+                        </ol>
+                        <p><strong>Jalur ini mempersiapkan lulusan untuk menjadi ahli yang berperan penting dalam proses pengembangan dan pengujian aplikasi. Profesi ini sangat diminati di berbagai perusahaan.</strong></p>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</section>
+    
+    <!-- footer -->
+ <footer class="bg-light text-dark pt-4">
+    <div class="container">
+        <div class="row" id="footer1">
+            <!-- Kolom 1 -->
+            <div class="col-md-3 my-3">
+                <h6 class="font-weight-bold">Tentang UNAKI</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark">Sejarah</a></li>
+                    <li><a href="#" class="text-dark">Kunjungan</a></li>
+                    <li><a href="#" class="text-dark">Unduh</a></li>
+                    <li><a href="#" class="text-dark">Direktori</a></li>
+                    <li><a href="#" class="text-dark">Peta Kampus</a></li>
+                </ul>
+            </div>
+            <!-- Kolom 2 -->
+            <div class="col-md-3 my-3">
+                <h6 class="font-weight-bold">Penerimaan</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-dark">Pascasarjana</a></li>
+                  <li><a href="#" class="text-dark">Pertukaran Mahasiswa</a></li>
+                  <li><a href="#" class="text-dark">Profesi</a></li>
+                  <li><a href="#" class="text-dark">Sarjana</a></li>
+                  <li><a href="#" class="text-dark">Kelas Internasional</a></li>
+                </ul>
+            </div>
+            <!-- Kolom 3 -->
+            <div class="col-md-3 my-3">
+                <h6 class="font-weight-bold">Pendidikan</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-dark">Fakultas dan Sekolah</a></li>
+                  <li><a href="#" class="text-dark">Program Studi</a></li>
+                  <li><a href="#" class="text-dark">Beasiswa</a></li>
+                  <li><a href="#" class="text-dark">Pemyelajaran Jarak Jauh</a></li>
+                  <li><a href="#" class="text-dark">Blended Learning</a></li>
+                  <li><a href="#" class="text-dark">Perpustakaan Digital</a></li>
+                  <li><a href="#" class="text-dark">Agenda Akademik</a></li>
+                </ul>
+            </div>
+            <!-- Kolom 4 -->
+            <div class="col-md-3 my-3">
+                <h6 class="font-weight-bold">Penelitian</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-dark">Penelitian</a></li>
+                  <li><a href="#" class="text-dark">Kelompok Keahlian/Keilmuan</a></li>
+                  <li><a href="#" class="text-dark">Jurnal</a></li>
+                </ul>
+            </div>
+        </div>
+    <!-- Media Sosial -->
+    <div class="row justify-content-center mt-3" id="sosmed">
+        <div class="col-auto">
+            <a href="https://www.facebook.com/Universitas.AKI.Semarang" class="text-dark mx-3"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://www.instagram.com/universitasaki" class="text-dark mx-3"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="https://x.com/UniversitasAKI" class="text-dark mx-3"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-dark mx-3"><i class="fab fa-tiktok fa-lg"></i></a>
+            <a href="https://www.youtube.com/user/UniversitasAKI/videos" class="text-dark mx-3"><i class="fab fa-youtube fa-lg"></i></a>
+        </div>
+    </div>  
+    </div>
+
+<!-- bottom -->
+    <div class="row mt-3">
+        <div class="col text-center">
+          <p class="text-secondary">
+            <a href="#" class="text-dark mx-2">Berita</a> ·
+            <a href="#" class="text-dark mx-2">Agenda</a> ·
+            <a href="#" class="text-dark mx-2">Fokus</a> ·
+            <a href="#" class="text-dark mx-2">E-Book</a>
+          </p>
+          <p style="font-size: 12;margin-top:40px;">
+            Copyright © PMB - Universitas AKI. All Rights Reserved
+          </p>
+        </div>
+      </div>
+ </footer>
+
+ <button id="backToTop" class="btn btn-info" style="position: fixed;bottom:0;right:0;margin:20px;background-color:#005aab;">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Script -->
+ <script>
+    /* Nav-link active */
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('.nav-link.active')?.classList.remove('active');
+                this.classList.add('active');
+            });
+        });
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+    
+            let currentSection = '';
+    
+            sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
+                currentSection = section.getAttribute('id');
+            }
+            });
+
+    /* Swiper */
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 3000, 
+                disableOnInteraction: false, 
+              },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+          });
+
+    /* Language */
+        function changeLanguage(lang) {
+            if (lang === 'en') {
+                alert('Switched to English!');
+                
+            } else if (lang === 'id') {
+                alert('Berpindah ke Bahasa Indonesia!');
+            
+            }
+        }
+
+    /* Scroll-to-top LOGO */
+        $(document).ready(function() {
+            $('#logoUnaki').on('click', function(event) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0 
+                }, 800); 
+            });
+
+            $('#logoUnaki').on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('body').animate({
+                        scrollTop: $(hash).offset().top - 70
+                    }, 800);
+                }
+            });
+        });
+
+    /* Scroll-to-top Button */
+        $(document).ready(function() {
+            $('a.nav-link').on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').stop().animate({
+                        scrollTop: $(hash).offset().top - 70
+                    }, 800);
+                }
+            });
+            $(window).on('scroll', function() {
+                if ($(this).scrollTop() > 300) {
+                    $('#backToTop').fadeIn();
+                } else {
+                    $('#backToTop').fadeOut();
+                }
+            });
+            $('#backToTop').on('click', function() {
+                $('html, body').stop().animate({ scrollTop: 0 }, 800);
+                return false;
+            });
+        });
+      });
+    /* Translate */
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en', includedLanguages: 'en,id,fr,de,es'}, 
+            'google_translate_element'
+        );
+    }
+</script>
+<!-- CDN -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- JQUERY -->
+<script src="/Assets/jQuery-3.6.0/jquery-3.6.0.js"></script>
+<!-- BOOTSTRAP 4 JS -->
+<script src="/Assets/bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+<script src="/Assets/DataTables-1.13.1/js/dataTables.bootstrap4.js"></script>
+<script src="/Assets/DataTables-1.13.1/js/jquery.dataTables.js"></script>
+</body>
+</html>
